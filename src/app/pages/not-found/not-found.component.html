@@ -1,0 +1,33 @@
+<div class="min-h-screen flex flex-col">
+  <app-header></app-header>
+  <main
+    class="flex-1 container mx-auto px-4 py-12 flex flex-col items-center justify-center"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="h-16 w-16 text-blue-primary mb-6"
+    >
+      <path
+        d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
+      />
+      <path d="M12 9v4" />
+      <path d="M12 17h.01" />
+    </svg>
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">404</h1>
+    <p class="text-xl text-muted-foreground mb-8 text-center max-w-md">
+      Oops! The page you're looking for doesn't exist or has been moved.
+    </p>
+    <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium h-10 px-4 py-2 bg-primary text-primary-foreground hover:bg-primary/90">
+      <a href="/">Return to Home</a>
+    </button>
+  </main>
+  <app-footer></app-footer>
+</div>
