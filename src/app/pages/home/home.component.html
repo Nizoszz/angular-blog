@@ -1,0 +1,65 @@
+<div class="min-h-screen flex flex-col">
+  <app-header></app-header>
+  <main class="container mx-auto px-4 py-3 flex items-center flex-col">
+    <section class="mb-12">
+      <app-feature-article
+        [featureArticle]="featuredArticle"
+      ></app-feature-article>
+    </section>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+        <section>
+          <div class="flex items-center justify-between mb-6">
+            <h2 class="text-2xl font-bold">Recent Articles</h2>
+            <a href="#" class="text-blue-primary hover:underline"> View all </a>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <app-article-card
+              *ngFor="let article of recentArticles"
+              [article]="article"
+            ></app-article-card>
+          </div>
+        </section>
+      </div>
+      <aside class="space-y-6">
+        <app-category-section></app-category-section>
+        <h3 class="text-xl font-bold mb-4">Trending Topics</h3>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <span class="font-bold text-blue-primary mr-2">01</span>
+            <a href="#" class="hover:text-blue-primary transition-colors">
+              The Impact of AI on Future Workforce
+            </a>
+          </li>
+          <li class="flex items-start">
+            <span class="font-bold text-blue-primary mr-2">02</span>
+            <a href="#" class="hover:text-blue-primary transition-colors">
+              Cybersecurity Best Practices 2023
+            </a>
+          </li>
+          <li class="flex items-start">
+            <span class="font-bold text-blue-primary mr-2">03</span>
+            <a href="#" class="hover:text-blue-primary transition-colors">
+              Flutter vs. React Native: Which to Choose
+            </a>
+          </li>
+          <li class="flex items-start">
+            <span class="font-bold text-blue-primary mr-2">04</span>
+            <a href="#" class="hover:text-blue-primary transition-colors">
+              The Future of Remote Work Technology
+            </a>
+          </li>
+          <li class="flex items-start">
+            <span class="font-bold text-blue-primary mr-2">05</span>
+            <a href="#" class="hover:text-blue-primary transition-colors">
+              Sustainable Tech: Eco-Friendly Innovations
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+  <app-newsletter></app-newsletter>
+  <app-footer></app-footer>
+</div>
