@@ -26,7 +26,7 @@ Foi criado como parte dos meus estudos pessoais para explorar a integração ent
   ```
 3. Acesse no navegador:
      ```bash
-      ttp://localhost:4200/
+      http://localhost:4200/
      ```
 ## 📝 Licença
 Este projeto foi feito apenas para fins educacionais.
